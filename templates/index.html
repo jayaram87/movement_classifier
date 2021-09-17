@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Air Temp Predictor</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="container">
+    <button class="btn btn-primary btn-block btn-large"><a href="/pandas_profiling">EDA Report</a></button>
+    <h1>Please enter the numbers</h1>
+    <form action="/predict" method="POST">
+        <br>
+        <label for="avg_rss12">Enter avg_rss12</label>
+        <input type="text" name="avg_rss12" id='avg_rss12' placeholder="avg_rss12" value="0.0" min="0.0" max="60.0" required="required" />
+        <br>
+        <br>
+        <label for="var_rss12">Enter var_rss12</label>
+        <input type="text" name="var_rss12" id='var_rss12' placeholder="var_rss12" value="0.0" min="0.0" max="20.0" required="required" />
+        <br>
+        <br>
+        <label for="avg_rss13">Enter avg_rss13</label>
+        <input type="text" name="avg_rss13" id='avg_rss13' placeholder="avg_rss13" value="0.0" min="0.0" max="40.0" required="required" />
+        <br>
+        <br>
+        <label for="var_rss13">Enter var_rss13</label>
+        <input type="text" name="var_rss13" id='var_rss13' placeholder="var_rss13" value="0.0" min="0.0" max="12.0" required="required" />
+        <br>
+        <br>
+        <label for="avg_rss23">Enter avg_rss23</label>
+        <input type="text" name="avg_rss23" id='avg_rss23' placeholder="avg_rss23" value="0.0" min="0.0" max="45.0" required="required" />
+        <br>
+        <br>
+        <label for="var_rss23">Enter var_rss23</label>
+        <input type="text" name="var_rss23" id='var_rss23' placeholder="var_rss23" value="0.0" min="0.0" max="15.0" required="required" />
+        <br>
+        <br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Movement Predictor</button>
+    </form>
+</div>
+</body>
+</html>
